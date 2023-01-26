@@ -1,0 +1,25 @@
+th {
+    position: relative;
+}
+
+th:hover{
+    cursor: pointer;
+    background: rgb(228, 243, 243) !important;
+}
+/* th:hover th::after {
+    opacity: 1;
+} */
+
+th::after {
+    content: '< >';
+    position: absolute;
+    font-size: 24px;
+    color: rgb(197, 195, 195);
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: all .2s ease-out;
+    z-index: 100;
+}
+
